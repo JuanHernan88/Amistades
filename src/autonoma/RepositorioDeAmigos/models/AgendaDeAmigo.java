@@ -67,10 +67,11 @@ public class AgendaDeAmigo {
     /**
      * Muestra informacion sobre la aplicacion
      */
-    public void mostrarAcercaDe() {
-        System.out.println("Aplicacion: Agenda de Amigos");
-        System.out.println("Taller de programacion - Universidad UAM");
-        System.out.println("Desarrolladores: Juan Esteban Hernandez Martinez");
+    public String mostrarAcercaDe() {
+        return "Aplicación: Agenda de Amigos\n"
+         + "Taller de programación Orientada a objetos - Universidad UAM\n"
+         + "Desarrolladores: Juan Esteban Hernández Martínez y Juan Jacobo Cañas Henao";
+
     }
 
     /**

@@ -7,6 +7,7 @@ package autonoma.RepositorioDeAmigos.views;
 import autonoma.RepositorioDeAmigos.models.AgendaDeAmigo;
 import java.awt.Color;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -167,6 +168,9 @@ public class PaginaPrincipal extends javax.swing.JFrame {
 
         btnInformacion.setBackground(new java.awt.Color(120, 134, 199));
         btnInformacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnInformacionMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnInformacionMouseEntered(evt);
             }
@@ -338,6 +342,15 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         BuscarAmigo ventanaBuscar = new BuscarAmigo (this, true, agendaAmigo, this);
         ventanaBuscar.setVisible(true);
     }//GEN-LAST:event_btnBuscarAmigoMouseClicked
+
+    private void btnInformacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnInformacionMouseClicked
+        if (agendaAmigo != null) {
+            String info = agendaAmigo.mostrarAcercaDe();
+            JOptionPane.showMessageDialog(this, info, "Acerca de", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(this, "No se pudo obtener la información del programa.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_btnInformacionMouseClicked
 
    private void mouseEntered(JPanel panel){
         panel.setBackground(new Color(45,51,107));
