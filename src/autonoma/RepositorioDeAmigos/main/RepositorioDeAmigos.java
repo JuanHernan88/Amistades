@@ -4,6 +4,8 @@
  */
 package autonoma.RepositorioDeAmigos.main;
 
+import autonoma.RepositorioDeAmigos.views.PaginaPrincipal;
+
 /**
  *
  * @author juan jacobo cañas h
@@ -16,7 +18,9 @@ public class RepositorioDeAmigos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        PaginaPrincipal PaginaPrincipal = new PaginaPrincipal();
+        PaginaPrincipal.setVisible(true);
+        
     }
     
 }
