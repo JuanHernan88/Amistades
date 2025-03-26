@@ -9,7 +9,7 @@ import autonoma.RepositorioDeAmigos.models.AgendaDeAmigo;
 import autonoma.RepositorioDeAmigos.models.Amigo;
 
 /**
- *
+ *Modelo main
  * @author juan jacobo cañas h
  * @since 26032025
  * @version 1.0.0

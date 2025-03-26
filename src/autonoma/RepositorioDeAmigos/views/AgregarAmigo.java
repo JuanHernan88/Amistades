@@ -12,9 +12,15 @@ import javax.swing.JOptionPane;
 import autonoma.RepositorioDeAmigos.models.Amigo;
 
 /**
- *
- * @author juane
- */
+  *Modelo para agregar un Amigo
+  * 
+  * @author Juan Esteban Hernández Martínez
+  * @since 20250312
+  * @version 1.0.0 
+  *
+  * Panel donde se agregan los amigos
+  *
+*/
 public class AgregarAmigo extends javax.swing.JDialog {
 
     private AgendaDeAmigo agendaAmigo;
@@ -244,7 +250,7 @@ public class AgregarAmigo extends javax.swing.JDialog {
     
             JOptionPane.showMessageDialog(this, "Amigo agregado exitosamente", "Éxito", JOptionPane.INFORMATION_MESSAGE);
 
-            dispose(); // Cierra la ventana después de agregar
+            dispose();
         }catch (Exception e) {
         JOptionPane.showMessageDialog(this, "Error al agregar el amigo: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
     }

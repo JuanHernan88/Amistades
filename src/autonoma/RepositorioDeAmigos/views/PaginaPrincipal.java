@@ -11,9 +11,14 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
- *
- * @author juanl
- */
+  *Modelo para mostrar el menu principal del programa
+  * 
+  * @author Juan Esteban Hernández Martínez
+  * @since 20250312
+  * @version 1.0.0 
+  *
+  *
+*/
 public class PaginaPrincipal extends javax.swing.JFrame {
 
         private AgendaDeAmigo agendaAmigo;
