@@ -9,7 +9,16 @@ import autonoma.RepositorioDeAmigos.exceptions.AmigoYaRegistradoException;
 import autonoma.RepositorioDeAmigos.exceptions.DatoInvalidoException;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+  *Modelo para representar un Amigo
+  * 
+  * @author Juan Esteban Hernández Martínez
+  * @since 20250312
+  * @version 1.0.0 
+  *
+  * Clase que representa una agenda de amigos. Permite agregar y buscar amigos.
+  *
+*/
 public class AgendaDeAmigo {
 
     // Lista para almacenar los amigos

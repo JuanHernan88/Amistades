@@ -6,7 +6,9 @@ package autonoma.RepositorioDeAmigos.exceptions;
 
 /**
  *
- * @author juanl
+ * @author juan jacobo cañas h
+ * @since 26032025
+ * @version 1.0.0
  */
 public class AmigoNoEncontradoException extends Exception {
 
