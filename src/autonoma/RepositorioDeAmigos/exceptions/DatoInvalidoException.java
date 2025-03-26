@@ -8,6 +8,11 @@ package autonoma.RepositorioDeAmigos.exceptions;
  *
  * @author juanl
  */
-public class DatoInvalidoException {
+public class DatoInvalidoException extends Exception {
+
+    public DatoInvalidoException() {
+        super("El dato ingresado es invalido");
+    }
+    
     
 }

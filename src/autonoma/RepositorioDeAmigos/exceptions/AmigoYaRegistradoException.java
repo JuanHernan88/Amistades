@@ -8,6 +8,11 @@ package autonoma.RepositorioDeAmigos.exceptions;
  *
  * @author juanl
  */
-public class AmigoYaRegistradoException {
+public class AmigoYaRegistradoException extends Exception {
+
+    public AmigoYaRegistradoException() {
+        super("El amigo ya se encuentra registrado");
+    }
+    
     
 }

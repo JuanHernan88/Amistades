@@ -8,6 +8,10 @@ package autonoma.RepositorioDeAmigos.exceptions;
  *
  * @author juanl
  */
-public class AmigoEncontradoException {
+public class AmigoEncontradoException extends Exception {
+
+    public AmigoEncontradoException() {
+        super("El amigo no fue encontrado");
+    }
     
 }
