@@ -5,6 +5,8 @@
 package autonoma.RepositorioDeAmigos.main;
 
 import autonoma.RepositorioDeAmigos.views.PaginaPrincipal;
+import autonoma.RepositorioDeAmigos.models.AgendaDeAmigo;
+import autonoma.RepositorioDeAmigos.models.Amigo;
 
 /**
  *
@@ -18,8 +20,10 @@ public class RepositorioDeAmigos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        PaginaPrincipal PaginaPrincipal = new PaginaPrincipal();
-        PaginaPrincipal.setVisible(true);
+        
+        AgendaDeAmigo agendaAmigo = new AgendaDeAmigo();
+        PaginaPrincipal paginaPrincipal = new PaginaPrincipal(agendaAmigo);
+        paginaPrincipal.setVisible(true);
         
     }
     

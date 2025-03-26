@@ -4,6 +4,7 @@
  */
 package autonoma.RepositorioDeAmigos.views;
 
+import autonoma.RepositorioDeAmigos.models.AgendaDeAmigo;
 import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
@@ -14,10 +15,11 @@ import javax.swing.JPanel;
  */
 public class PaginaPrincipal extends javax.swing.JFrame {
 
+        private AgendaDeAmigo agendaAmigo;
     /**
      * Creates new form PaginaPrincipal
      */
-    public PaginaPrincipal() {
+    public PaginaPrincipal(AgendaDeAmigo agendaAmigo) {
         initComponents();
         this.setLocationRelativeTo(null);
         try{
@@ -25,6 +27,8 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         }catch(Exception e){
             
         }
+        
+        this.agendaAmigo = agendaAmigo;
     }
 
     /**
@@ -83,6 +87,9 @@ public class PaginaPrincipal extends javax.swing.JFrame {
 
         btnAgregarAmigo.setBackground(new java.awt.Color(120, 134, 199));
         btnAgregarAmigo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAgregarAmigoMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnAgregarAmigoMouseEntered(evt);
             }
@@ -318,6 +325,11 @@ public class PaginaPrincipal extends javax.swing.JFrame {
     private void btnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseClicked
         dispose();
     }//GEN-LAST:event_btnSalirMouseClicked
+
+    private void btnAgregarAmigoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarAmigoMouseClicked
+        AgregarAmigo ventanaAgregar = new AgregarAmigo(this,true, this.agendaAmigo, this);
+        ventanaAgregar.setVisible(true);
+    }//GEN-LAST:event_btnAgregarAmigoMouseClicked
 
    private void mouseEntered(JPanel panel){
         panel.setBackground(new Color(45,51,107));
