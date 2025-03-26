@@ -127,6 +127,9 @@ public class PaginaPrincipal extends javax.swing.JFrame {
 
         btnBuscarAmigo.setBackground(new java.awt.Color(120, 134, 199));
         btnBuscarAmigo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBuscarAmigoMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnBuscarAmigoMouseEntered(evt);
             }
@@ -330,6 +333,11 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         AgregarAmigo ventanaAgregar = new AgregarAmigo(this,true, this.agendaAmigo, this);
         ventanaAgregar.setVisible(true);
     }//GEN-LAST:event_btnAgregarAmigoMouseClicked
+
+    private void btnBuscarAmigoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarAmigoMouseClicked
+        BuscarAmigo ventanaBuscar = new BuscarAmigo (this, true, agendaAmigo, this);
+        ventanaBuscar.setVisible(true);
+    }//GEN-LAST:event_btnBuscarAmigoMouseClicked
 
    private void mouseEntered(JPanel panel){
         panel.setBackground(new Color(45,51,107));
